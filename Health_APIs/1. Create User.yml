@@ -1,0 +1,23 @@
+info:
+  name: 1. Create User
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{host}}/users"
+  body:
+    type: json
+    data: |-
+      {
+        "role":"{{role}}",
+        "email":"{{user}}",
+        "password":"{{password}}"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

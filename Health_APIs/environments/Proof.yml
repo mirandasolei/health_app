@@ -1,0 +1,10 @@
+name: Proof
+variables:
+  - name: host
+    value: https://health.shrp.dev
+  - name: user
+    value: health@example.fr
+  - name: password
+    value: password123
+  - name: role
+    value: 0777b505-b6cc-4308-9f17-c47fda65da29

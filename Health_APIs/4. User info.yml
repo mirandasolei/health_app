@@ -1,0 +1,18 @@
+info:
+  name: 4. User info
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{host}}/users/me"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFlMmUxNjNhLTZmZTEtNGJiMC04Y2IxLWJjZTAyYjVmMzhlMCIsInJvbGUiOiIwNzc3YjUwNS1iNmNjLTQzMDgtOWYxNy1jNDdmZGE2NWRhMjkiLCJhcHBfYWNjZXNzIjpmYWxzZSwiYWRtaW5fYWNjZXNzIjpmYWxzZSwiaWF0IjoxNzc3MzcxMjkwLCJleHAiOjE3NzczNzIxOTAsImlzcyI6ImRpcmVjdHVzIn0.C9hvKDItoRD-MeoTXQEYi629xee04ViZn1B_o16vVDM
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
